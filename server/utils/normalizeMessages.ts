@@ -1,3 +1,4 @@
+//server/utils/normalizeMessages.ts
 import { assert } from '@vueuse/core'
 import type { ApiMessage, Message } from '~/types/Message'
 

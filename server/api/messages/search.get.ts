@@ -1,3 +1,4 @@
+//server/api/messages/search.get.ts
 import type { Filter } from 'mongodb'
 import { mongo } from '~/server/utils/mongo'
 import type { Message } from '~/types/Message'

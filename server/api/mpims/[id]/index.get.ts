@@ -1,3 +1,4 @@
+//server/api/mpims/[id]/index.get.ts
 import { mongo } from '~/server/utils/mongo'
 import type { Channel } from '~/types/Channel'
 

@@ -4,13 +4,15 @@ import { useI18n } from 'vue-i18n'
 
 provideUseId(() => useId())
 
-const { t } = useI18n()
+const { t } = useI18n() //useI18n：从 vue-i18n 库中导入，用于处理国际化（i18n）。它帮助你在应用中管理多语言翻译。
+//()：是 vue-i18n 提供的翻译函数，通过传入翻译 key，可以获取不同语言版本的文本。例如，t('description') 会查找当前语言环境下的 description 对应的翻译。
 
 const config = useRuntimeConfig()
+//useRuntimeConfig()：这个钩子用于获取运行时配置（例如在 nuxt.config.js 中定义的配置项）。在这里，它获取了 config 对象，里面包含了 public 字段，这通常用于获取公开的配置项，例如网站 URL。
 
-useHead({
-  title: 'Slack Vuesualizer',
-  meta: [
+useHead({//useHead()：这个函数来自 Nuxt 3，用于动态设置页面的 <head> 标签内容，包括标题、描述、图标、Open Graph 信息等。
+  title: 'Slack Vuesualizer', 
+  meta: [ //meta: [：定义了一系列的元标签（meta tags），这些标签提供了关于页面内容的信息，如描述、关键词、作者等。
     {
       name: 'description',
       content: t('description'),

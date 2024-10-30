@@ -1,3 +1,4 @@
+//server/api/users/index.get.ts
 import { mongo } from '~/server/utils/mongo'
 import type { User } from '~~/types/User'
 

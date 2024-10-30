@@ -7,7 +7,15 @@ Then this is the tool for you!
 
 Slack Vuesualizer is a web app to view, search and share your old Slack messages.
 
+Modify the authentication middleware (auth.ts) to include the user ID (userId) from a cookie.
+* Implement a login flow where users select their user ID after uploading the Slack data.
+* Create a UserDb class in mongo.ts to centralize database access and automatically filter queries based on userId.
+* Update your API endpoints to use the new UserDb class.
+* Adjust your frontend components to handle authentication and redirect users appropriately.
+* Protect routes using middleware to ensure only authenticated users can access data.
 ![Screenshot](./public/screenshot.png)
+
+
 
 Use the hosted version at [https://slack-vuesualizer.de/](https://slack-vuesualizer.de/) for free or spin up your own website using the Docker image as [described below](#setup).
 
@@ -47,6 +55,48 @@ All the files to build a local image can be found in this repository as well.
 Contributions are welcome! Feel free to fork this repository and open a pull request.
 
 If you have an idea for a feature or a bug to report, feel free to open an issue.
+
+### Project Structure
+
+Here's an overview of the main project structure:
+
+```
+slack-vuesualizer/
+├── .env.sample
+├── app.vue
+├── components/
+├── composables/
+├── layouts/
+├── pages/
+├── plugins/
+├── public/
+│   ├── Slack_Mark.svg
+│   └── screenshot.png
+├── server/
+├── utils/
+├── docker-compose.yml
+├── docker-compose.dev.yml
+├── Dockerfile
+├── nuxt.config.ts
+├── package.json
+└── README.md
+```
+
+- `.env.sample`: Sample environment variables file
+- `app.vue`: The main Vue application file
+- `components/`: Vue components used throughout the application
+- `composables/`: Reusable Vue composition functions
+- `layouts/`: Nuxt layouts for structuring pages
+- `pages/`: Vue components representing different routes/pages
+- `plugins/`: Nuxt plugins for extending functionality
+- `public/`: Static assets served directly by the web server
+- `server/`: Server-side code and API routes
+- `utils/`: Utility functions and helpers
+- `docker-compose.yml`: Docker Compose file for production setup
+- `docker-compose.dev.yml`: Docker Compose file for development setup
+- `Dockerfile`: Instructions for building the Docker image
+- `nuxt.config.ts`: Nuxt configuration file
+- `package.json`: Project dependencies and scripts
 
 ### Development
 

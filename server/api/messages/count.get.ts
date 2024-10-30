@@ -1,3 +1,4 @@
+//server/api/messages/count.get.ts
 import { mongo } from '~/server/utils/mongo'
 
 export default defineEventHandler(async (event) => {

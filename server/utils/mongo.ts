@@ -1,3 +1,4 @@
+//server/utils/mongo.ts
 import { MongoClient } from 'mongodb'
 
 let _fullClient: MongoClient | null = null

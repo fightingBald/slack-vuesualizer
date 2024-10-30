@@ -1,3 +1,4 @@
+//server/api/workspaces/index.delete.ts
 export default defineEventHandler(async (event) => {
   const db = await mongo(event.context.mongouuid)
 

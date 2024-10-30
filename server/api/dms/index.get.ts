@@ -1,3 +1,4 @@
+//server/api/dms/index.get.ts
 import { mongo } from '~/server/utils/mongo'
 import type { Dm } from '~~/types/Dm'
 
