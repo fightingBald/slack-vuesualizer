@@ -1,3 +1,4 @@
+// path: composables/useSearch.ts
 import type { Message } from '~/types/Message'
 
 export function useSearch(currentChannel: Ref<string | string[]>) {

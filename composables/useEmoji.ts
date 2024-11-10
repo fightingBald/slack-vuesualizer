@@ -1,3 +1,4 @@
+// path composables/useEmoji.ts
 import EmojiConvertor from 'emoji-js'
 import type { MaybeRef } from '@vueuse/core'
 

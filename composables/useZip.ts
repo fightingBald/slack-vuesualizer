@@ -1,3 +1,4 @@
+//path: composables/useZip.ts
 import * as zip from '@zip.js/zip.js'
 
 export const useZip = () => {

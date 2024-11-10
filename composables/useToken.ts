@@ -1,3 +1,4 @@
+//path: composables/useToken.ts
 export const useToken = () => useCookie('mongouuid')
 
 export const useShareLink = () => {

@@ -28,6 +28,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/i18n',
     '@nuxtjs/robots',
+    '@nuxt/test-utils/module',
   ],
 
   colorMode: {

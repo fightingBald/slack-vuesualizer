@@ -1,3 +1,4 @@
+// path: composables/useFile.ts
 import { filesize } from 'filesize'
 import { useI18n } from 'vue-i18n'
 import type { DocFile, ImageFile, PdfFile, ShownFile, VideoFile } from '~/types/File'

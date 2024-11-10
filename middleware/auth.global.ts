@@ -1,8 +1,12 @@
+//path middleware/auth.global.ts
 export default defineNuxtRouteMiddleware((to, _) => {
   const urlToken = to.query.token
   const token = useCookie('mongouuid')
   const localePath = useLocalePath()
   const localeRoute = useLocaleRoute()
+  const userId = useCookie('userId').value
+
+
 
   if (typeof urlToken === 'string')
     token.value = urlToken
